@@ -1,0 +1,76 @@
+.trainers__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.card.trainer {
+  padding: 1rem;
+}
+.trainer__img {
+  border-radius: 0 2rem;
+  overflow: hidden;
+}
+.trainer__img img {
+  height: 60%;
+}
+.trainer p {
+  margin-top: 0.5rem;
+}
+.trainer h3 {
+  margin-top: 2rem;
+  color: var(--color-black);
+}
+.trainer:hover h3 {
+  color: var(--color-text);
+}
+.trainer__socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.trainer__socials a {
+  font-size: 0.7rem;
+  background: var(--color-black);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  transition: var(--transtion);
+}
+.trainer__socials a:hover {
+  border-color: var(--color-gray-200);
+  background: var(--color-gray-400);
+}
+
+/* Media Queries (Medium Screen) */
+@media screen and (max-width: 1024px) {
+  .trainers__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .trainer__socials {
+    justify-content: space-around;
+  }
+  .trainer__socials a {
+    padding: 1.5rem;
+  }
+  .trainer__socials a svg {
+    font-size: 1.2rem;
+  }
+}
+/* Media Queries (Small Screen) */
+@media screen and (max-width: 600px) {
+  .trainers__container {
+    grid-template-columns: 1fr;
+  }
+  .trainer__socials {
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  .trainer__socials a {
+    padding: 1rem;
+  }
+  .trainer__socials a svg {
+    font-size: 0.6rem;
+  }
+}
