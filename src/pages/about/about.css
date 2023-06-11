@@ -106,6 +106,7 @@
 .about__btn button {
   cursor: pointer;
 }
+
 .about__vision {
   background-color: #141414;
 }
@@ -117,6 +118,7 @@
 .about__mission {
   background-color: #141414;
   margin-top: 0;
+  padding-bottom: 5rem;
 }
 .about__mission-container {
   display: grid;

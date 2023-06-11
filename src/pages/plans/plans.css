@@ -1,3 +1,7 @@
+.plans {
+  margin-bottom: 5rem;
+}
+
 .plan__header {
   width: unset;
   left: unset;

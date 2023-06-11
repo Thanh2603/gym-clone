@@ -194,6 +194,7 @@
 .testimonials {
   width: 50rem;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 .testimonials__head {
   justify-content: center;
@@ -258,7 +259,7 @@
 /* Footer Css */
 footer {
   background: var(--color-background);
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
   padding-top: 3rem;
   font-size: 0.9rem;
   color: var(--color-gray-200);
@@ -449,7 +450,7 @@ footer .logo {
   }
   /* Footer */
   footer {
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
   }
   .footer__container {
     grid-template-columns: 1fr;

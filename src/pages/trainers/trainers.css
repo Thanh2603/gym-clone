@@ -3,6 +3,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
+.trainer {
+  margin-bottom: 5rem;
+}
 .card.trainer {
   padding: 1rem;
 }

@@ -24,9 +24,14 @@ export const links = [
     name: "Huấn Luyện Viên",
     path: "/trainers",
   },
+
   {
     name: "Liên Hệ",
     path: "/contact",
+  },
+  {
+    name: "Tập Thử Miễn Phí",
+    path: "/trial",
   },
 ];
 
