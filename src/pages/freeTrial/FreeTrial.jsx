@@ -1,10 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 import Header from "../../components/Header";
 import HeaderImg from "../../images/head_bg_8.jpg";
 import TrialImg from "../../images/trial.jpg";
-import HeaderMobile from "../../images/mobile_bg.jpg";
 import "./freeTrial.css";
 const FreeTrial = () => {
+  useEffect(() => {
+    document.title =
+      "Gym Clone | Quyền Lợi Khi Đăng Ký Thành Viên Tại California Fitness & Yoga";
+  }, []);
   return (
     <div className="trial">
       <div className="trial__banner">
