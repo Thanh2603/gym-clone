@@ -103,6 +103,16 @@ img {
   background: var(--color-text);
   color: var(--color-black);
 }
+.btn-scroll {
+  padding: 0.4rem;
+  background: var(--color-red);
+  color: var(--color-text);
+  cursor: pointer;
+}
+.btn-scroll:hover {
+  transform: scale(1.1);
+  transition: var(--transition);
+}
 section {
   margin-top: 10rem;
 }

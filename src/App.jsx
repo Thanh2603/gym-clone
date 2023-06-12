@@ -9,8 +9,27 @@ import NotFound from "./pages/notFound/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FreeTrial from "./pages/freeTrial/FreeTrial";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const handleGoToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const [showGoToTop, setShowGoToTop] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 800) {
+        setShowGoToTop(true);
+      } else {
+        setShowGoToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <BrowserRouter>
       <Navbar />
@@ -27,6 +46,19 @@ const App = () => {
       </Routes>
 
       <Footer />
+      {showGoToTop && (
+        <button
+          onClick={handleGoToTop}
+          className="btn-scroll"
+          style={{
+            position: "fixed",
+            right: "20px",
+            bottom: "20px",
+          }}
+        >
+          Go To Top
+        </button>
+      )}
     </BrowserRouter>
   );
 };
