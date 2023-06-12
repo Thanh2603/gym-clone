@@ -104,13 +104,19 @@ img {
   color: var(--color-black);
 }
 .btn-scroll {
-  padding: 0.4rem;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  transform: rotate(90deg);
   background: var(--color-red);
   color: var(--color-text);
   cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
 }
 .btn-scroll:hover {
-  transform: scale(1.1);
+  background: #ff7675;
   transition: var(--transition);
 }
 section {
@@ -280,5 +286,10 @@ section {
   .header__content p:nth-child(1) {
     font-size: 0.8rem;
     right: -5;
+  }
+  .btn-scroll {
+    border-radius: 4rem;
+    right: 2px;
+    padding: 0.4rem;
   }
 }
