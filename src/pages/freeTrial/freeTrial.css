@@ -104,7 +104,7 @@
     height: unset;
   }
   .trial__banner {
-    height: 100vh;
+    height: 1000px;
   }
   .submit_trying {
     flex-direction: column;
@@ -125,13 +125,15 @@
     width: 100%;
     max-width: calc(100vw - 40px);
     padding: 10rem 0rem;
-    height: 40%;
+    height: 40vh;
   }
   .form {
     margin: 1rem 1rem 0 1rem;
   }
+
   .submit-trying-right .form button {
-    margin: 2rem auto;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
   }
   .member__contain-left {
     margin-left: 1rem;

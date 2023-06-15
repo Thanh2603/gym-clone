@@ -33,7 +33,7 @@ const FreeTrial = () => {
                 <input type="text" name="name" placeholder="Họ Và Tên" />
                 <input type="text" name="phone" placeholder="Số Điện Thoại" />
                 <input type="email" name="email" placeholder="Email" />
-                <button className="btn lg">ĐĂNG KÝ</button>
+                <button className="btn lg ">ĐĂNG KÝ</button>
               </form>
             </div>
           </div>

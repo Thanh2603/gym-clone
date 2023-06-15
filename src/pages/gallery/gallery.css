@@ -98,6 +98,7 @@
   background: var(--color-background);
   padding: 5rem 8rem;
   margin-top: 7rem;
+  border-bottom: 3px solid #000;
 }
 .gallery__question h2 {
   font-size: 2.5rem;
