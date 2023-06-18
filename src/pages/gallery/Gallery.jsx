@@ -43,12 +43,14 @@ const Gallery = () => {
               <h1>35+ Câu Lạc Bộ</h1>
             </div>
             <div className="gallery__position">
-              <div className="gallery__input">
+              <div
+                className="gallery__input"
+                onClick={() => setSearch((prev) => !prev)}
+              >
                 <input
                   type="text"
                   placeholder="Chọn Thành Phố Của Bạn"
                   onChange={(e) => setQuery(e.target.value)}
-                  onClick={() => setSearch((prev) => !prev)}
                   className="search__input"
                 />
                 {search ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}

@@ -17,6 +17,7 @@
 }
 .gallery__input {
   display: flex;
+  width: 400px;
 }
 .gallery__input svg {
   font-size: 1.4rem;
@@ -57,7 +58,7 @@
 }
 .search__input {
   width: 100%;
-  max-width: 400px;
+
   font-size: 1rem;
   padding: 1.5rem 1rem;
 }
@@ -158,5 +159,11 @@
   }
   .gallery__question-item p {
     font-size: 1rem;
+  }
+  .search__input {
+    max-width: 300px;
+  }
+  .show__search {
+    max-width: 300px;
   }
 }
