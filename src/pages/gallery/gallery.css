@@ -19,8 +19,8 @@
   display: flex;
 }
 .gallery__input svg {
-  font-size: 2rem;
-  margin: auto -4rem;
+  font-size: 1.4rem;
+  margin: auto -2.5rem;
   color: var(--color-black);
   transform: rotateX(180deg);
   animation: searchAnimation 100ms ease forwards;

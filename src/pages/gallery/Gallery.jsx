@@ -28,7 +28,7 @@ const Gallery = () => {
   const [search, setSearch] = useState(false);
   // for (let i = 1; i < galleryLength; i++)
   //   images.push(require(`../../images/gallery${i}.jpg`));
-
+  const [query, setQuery] = useState("");
   return (
     <>
       <Header title="Câu Lạc Bộ" image={HeaderImage}>
@@ -47,6 +47,7 @@ const Gallery = () => {
                 <input
                   type="text"
                   placeholder="Chọn Thành Phố Của Bạn"
+                  onChange={(e) => setQuery(e.target.value)}
                   onClick={() => setSearch((prev) => !prev)}
                   className="search__input"
                 />
@@ -57,13 +58,18 @@ const Gallery = () => {
                   search ? "show__search" : "hide__search"
                 }`}
               >
-                {searchs.map(({ name }, index) => {
-                  return (
-                    <li key={index} onClick={() => setSearch((prev) => !prev)}>
-                      {name}
-                    </li>
-                  );
-                })}
+                {searchs
+                  .filter((name) => name.name.toLowerCase().includes(query))
+                  .map(({ name }, index) => {
+                    return (
+                      <li
+                        key={index}
+                        onClick={() => setSearch((prev) => !prev)}
+                      >
+                        {name}
+                      </li>
+                    );
+                  })}
               </ul>
             </div>
           </div>
