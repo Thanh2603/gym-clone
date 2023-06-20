@@ -36,6 +36,20 @@ nav {
 .nav__links a:hover {
   color: var(--color-red);
 }
+.nav__links li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav__links > li:hover svg {
+  transform: rotate(180deg);
+}
+.nav__links svg {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in, transform 0.1s ease-out,
+    -webkit-transform 0.3s ease-in-out;
+}
+
 .nav__links li:last-child {
   background: var(--color-red);
   height: 100%;

@@ -3,6 +3,8 @@ import { GiGymBag } from "react-icons/gi";
 import { CgGym } from "react-icons/cg";
 import { MdSportsGymnastics } from "react-icons/md";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 export const links = [
   {
     name: "Trang Chủ",
@@ -15,14 +17,17 @@ export const links = [
   {
     name: "Câu Lạc Bộ",
     path: "/gallery",
+    icon: <RiArrowDropDownLine />,
   },
   {
     name: "Gói Hội Viên",
     path: "/plans",
+    icon: <RiArrowDropDownLine />,
   },
   {
     name: "Huấn Luyện Viên",
     path: "/trainers",
+    icon: <RiArrowDropDownLine />,
   },
 
   {
@@ -156,6 +161,48 @@ export const searchs = [
   },
   {
     name: "Khánh Hòa",
+  },
+];
+export const galleryDropdown = [
+  {
+    id: 1,
+    name: "Đồng Nai",
+    path: "/dong-nai",
+  },
+  {
+    id: 2,
+    name: "Hồ Chí Minh",
+    path: "/ho-chi-minh",
+  },
+  {
+    id: 3,
+    name: "Hà Nội",
+    path: "/ha-noi",
+  },
+  {
+    id: 4,
+    name: "Bình Dương",
+    path: "/binh-duong",
+  },
+  {
+    id: 5,
+    name: "Cần Thơ",
+    path: "/can-tho",
+  },
+  {
+    id: 6,
+    name: "Bà Rịa - Vũng Tàu",
+    path: "/br-vt",
+  },
+  {
+    id: 7,
+    name: "Đà Nẵng",
+    path: "/da-nang",
+  },
+  {
+    id: 8,
+    name: "Khánh Hòa",
+    path: "/khanh-hoa",
   },
 ];
 export const testimonials = [
@@ -395,5 +442,19 @@ export const trainers = [
       "https://facebook.com/",
       "https://linkedin.com/",
     ],
+  },
+];
+export const trainerDropdown = [
+  {
+    name: "California NutriFit",
+    path: "/california-nutriFit",
+  },
+  {
+    name: "Kickfit & MMA",
+    path: "/kickfit-mma",
+  },
+  {
+    name: "Công nghệ giảm mỡ Hypoxi",
+    path: "/california-nutriFit",
   },
 ];
