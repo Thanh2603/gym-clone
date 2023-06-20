@@ -76,9 +76,11 @@
 .right__contain img {
   margin-top: 2rem;
 }
+.explore-more {
+  cursor: pointer;
+}
 .explore-more svg {
   margin-left: 1rem;
-  cursor: pointer;
   transition: var(--transition);
 }
 .explore-more:hover svg {

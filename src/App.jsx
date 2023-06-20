@@ -48,7 +48,7 @@ const App = () => {
 
       <Footer />
       {showGoToTop && (
-        <button onClick={handleGoToTop} className="btn-scroll" style={{}}>
+        <button onClick={handleGoToTop} className="btn-scroll">
           {<BiArrowBack />}
         </button>
       )}
